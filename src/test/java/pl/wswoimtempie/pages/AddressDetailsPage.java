@@ -14,6 +14,7 @@ import java.time.Duration;
 public class AddressDetailsPage {
 
     private WebDriver driver;
+
     public AddressDetailsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -52,7 +53,11 @@ public class AddressDetailsPage {
     @FindBy(id = "place_order")
     private WebElement placeOrderButton;
 
-    public OrderDetailsPage fillAddressDetails(Customer customer) throws InterruptedException {
+    //problem with displayed button place order
+    @FindBy(xpath = "//span[@class = 'czr-rights-text']")
+    private WebElement spanForVisibleButtonPlaceOrder;
+
+    public OrderDetailsPage fillAddressDetails(Customer customer) {
 
         firstNameInput.sendKeys(customer.getFirstName());
         lastNameInput.sendKeys(customer.getLastName());
@@ -66,15 +71,11 @@ public class AddressDetailsPage {
         billingPhoneInput.sendKeys(customer.getPhone());
         billingEmailInput.sendKeys(customer.getEmail());
         orderCommentsInput.sendKeys(customer.getComments());
-        Thread.sleep(Duration.ofMillis(300));
-        SeleniumHelper.waitForClicableLocator(driver, By.id("place_order"));
+        SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+        spanForVisibleButtonPlaceOrder.click();
         placeOrderButton.click();
         return new OrderDetailsPage(driver);
     }
-
-
-
-
 
 
 }

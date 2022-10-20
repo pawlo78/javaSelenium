@@ -9,6 +9,7 @@ import pl.wswoimtempie.utils.SeleniumHelper;
 public class OrderDetailsPage {
 
     private WebDriver driver;
+
     public OrderDetailsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -37,7 +38,6 @@ public class OrderDetailsPage {
         SeleniumHelper.waitForElementToBeVisible(driver, totalPrice);
         return totalPrice;
     }
-
 
 
 }

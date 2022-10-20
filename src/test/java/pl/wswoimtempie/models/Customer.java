@@ -16,7 +16,6 @@ public class Customer {
     private String comments = "Comments xyz";
 
 
-
     public String getComments() {
         return comments;
     }
@@ -24,6 +23,7 @@ public class Customer {
     public void setComments(String comments) {
         this.comments = comments;
     }
+
     public String getFirstName() {
         return firstName;
     }

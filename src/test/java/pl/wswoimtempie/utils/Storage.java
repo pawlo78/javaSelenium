@@ -2,7 +2,7 @@ package pl.wswoimtempie.utils;
 
 public class Storage {
 
-    public static String priceValue;
+    public static Double priceTotalValue;
 
     public static Double getPriceDouble(String value) {
         String[] data = value.split(" ");
