@@ -12,7 +12,6 @@ import java.io.IOException;
 
 public class ShoppingTest extends BaseTest {
 
-
     @Test
     public void shoppingOneProductOverProductPageTest() throws IOException {
         String product1Name = PropertiesLoader.loadProperty("product1.name");
@@ -37,7 +36,6 @@ public class ShoppingTest extends BaseTest {
         softAssert.assertEquals(Storage.getPriceDouble(orderDetailsPage.getTotalPrice().getText()), Storage.priceTotalValue);
     }
 
-
     @Test
     public void shoppingThreeProductOverProductPageTest() throws IOException {
         String product1Name = PropertiesLoader.loadProperty("product1.name");
@@ -51,8 +49,8 @@ public class ShoppingTest extends BaseTest {
                 .openShopPage()
                 .openProductPage(product1Name)
                 .addNoProductsToMainProductCart(noProducts1)
-                .addNoProductsToProduct2Cart(noProducts2)
-                .addNoProductsToProduct3Cart(noProducts3)
+                .addNoProductsToCart(noProducts2, 2)
+                .addNoProductsToCart(noProducts3, 3)
                 .viewCart()
                 .setTotalPrice()
                 .openOrdersBillingDetails()
@@ -65,9 +63,8 @@ public class ShoppingTest extends BaseTest {
         softAssert.assertEquals(Storage.getPriceDouble(orderDetailsPage.getTotalPrice().getText()), Storage.priceTotalValue);
     }
 
-
     @Test
-    public void shoppingThreeProductOverShopPageTest() throws IOException {
+    public void shoppingThreeProductOverShopPageTest() {
 
         Customer customer = new Customer();
 

@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import pl.wswoimtempie.models.Customer;
 import pl.wswoimtempie.utils.SeleniumHelper;
 
-import java.time.Duration;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class AddressDetailsPage {
 
@@ -53,9 +54,15 @@ public class AddressDetailsPage {
     @FindBy(id = "place_order")
     private WebElement placeOrderButton;
 
+    @FindBy(xpath = "//ul[@role = 'alert']//li")
+    private List<WebElement> errorValidate;
+
     //problem with displayed button place order
     @FindBy(xpath = "//span[@class = 'czr-rights-text']")
     private WebElement spanForVisibleButtonPlaceOrder;
+
+    @FindBy(xpath = "//form[@name = 'checkout']//ul[@class = 'woocommerce-error']//li[1]")
+    private WebElement aaa;
 
     public OrderDetailsPage fillAddressDetails(Customer customer) {
 
@@ -77,5 +84,39 @@ public class AddressDetailsPage {
         return new OrderDetailsPage(driver);
     }
 
+    public AddressDetailsPage validateAddressDetails(String fName, String lName, String country,
+                                                     String addres, String zCode, String city,
+                                                     String phone, String email) {
+
+        if (fName != "") {
+            firstNameInput.sendKeys(fName);
+            lastNameInput.sendKeys(lName);
+            Select countrySelect = new Select(billingCountrySelect);
+            countrySelect.selectByVisibleText(country);
+            billingAddress1Input.sendKeys(String.format(addres));
+            billingPostcodeInput.sendKeys(zCode);
+            billingCityInput.sendKeys(city);
+            billingPhoneInput.sendKeys(phone);
+            billingEmailInput.sendKeys(email);
+            spanForVisibleButtonPlaceOrder.click();
+            SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
+            SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+            SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
+            spanForVisibleButtonPlaceOrder.click();
+            placeOrderButton.click();
+        } else {
+            spanForVisibleButtonPlaceOrder.click();
+            SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
+            SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+            SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
+            placeOrderButton.click();
+        }
+        return this;
+    }
+
+    public List<String> getErrorList() {
+        SeleniumHelper.waitForElementToBeVisible(driver, aaa);
+        return errorValidate.stream().map(WebElement::getText).collect(Collectors.toList());
+    }
 
 }
