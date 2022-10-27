@@ -1,11 +1,15 @@
 package pl.wswoimtempie.tests;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pl.wswoimtempie.pages.AddressDetailsPage;
 import pl.wswoimtempie.pages.HomePage;
+import pl.wswoimtempie.utils.SeleniumHelper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,14 +18,15 @@ public class ValidateOfDataOrderTest extends BaseTest {
     @Test(dataProvider = "data-provider")
     public void shoppingThreeProductOverShopPageTest(String fName, String lName, String country,
                                                      String addres, String zCode, String city,
-                                                     String phone, String email) {
+                                                     String phone, String email) throws IOException {
 
+        ExtentTest test = extentReports.createTest("Shopping Three Prod Over Shop Page Test - Data: " + fName);
         AddressDetailsPage addressDetailsPage = new HomePage(driver)
-                .openShopPage()
-                .addOneProductToCart()
-                .setTotalPrice()
-                .openOrdersBillingDetails()
-                .validateAddressDetails(fName, lName, country, addres, zCode, city, phone, email);
+                .openShopPage(test)
+                .addOneProductToCart(test)
+                .setTotalPrice(test)
+                .openOrdersBillingDetails(test)
+                .validateAddressDetails(fName, lName, country, addres, zCode, city, phone, email, test);
 
         List<String> errors = addressDetailsPage.getErrorList();
         List<String> nameErr = getNameErrors();
@@ -35,14 +40,36 @@ public class ValidateOfDataOrderTest extends BaseTest {
                         System.out.println(errors.get(i));
                     }
                 }
-                Assert.assertTrue(flag == false);
+
+                if (flag == false) {
+                    test.log(Status.PASS, "Assertions passed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertTrue(flag == false);
+                } else {
+                    test.log(Status.FAIL, "Assertions failed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertTrue(flag == false);
+                }
                 break;
 
             case "1":
-                Assert.assertEquals(errors.get(0), "Billing Phone is not a valid phone number.");
+                if ("Billing Phone is not a valid phone number.".equals(errors.get(0))) {
+                    test.log(Status.PASS, "Assertions passed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertEquals(errors.get(0), "Billing Phone is not a valid phone number.");
+                } else {
+                    test.log(Status.FAIL, "Assertions failed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertEquals(errors.get(0), "Billing Phone is not a valid phone number.");
+                }
                 break;
+
             case "2":
-                Assert.assertEquals(errors.get(0), "Invalid billing email address");
+                if ("Invalid billing email address".equals(errors.get(0))) {
+                    System.out.println(errors.get(0));
+
+                    test.log(Status.PASS, "Assertions passed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertEquals(errors.get(0), "Invalid billing email address");
+                } else {
+                    test.log(Status.FAIL, "Assertions failed", SeleniumHelper.getScreenshot(driver));
+                    Assert.assertEquals(errors.get(0), "Invalid billing email address");
+                }
                 break;
         }
     }

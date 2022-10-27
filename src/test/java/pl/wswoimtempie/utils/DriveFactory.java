@@ -15,10 +15,10 @@ public class DriveFactory {
         String name = PropertiesLoader.loadProperty("browser.name");
 
         switch (name) {
-            case "firefox" :
+            case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
-            case "chrome" :
+            case "chrome":
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
             default:

@@ -1,5 +1,7 @@
 package pl.wswoimtempie.pages;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import pl.wswoimtempie.models.Customer;
 import pl.wswoimtempie.utils.SeleniumHelper;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -64,53 +67,67 @@ public class AddressDetailsPage {
     @FindBy(xpath = "//form[@name = 'checkout']//ul[@class = 'woocommerce-error']//li[1]")
     private WebElement aaa;
 
-    public OrderDetailsPage fillAddressDetails(Customer customer) {
+    public OrderDetailsPage fillAddressDetails(Customer customer, ExtentTest test) throws IOException {
 
-        firstNameInput.sendKeys(customer.getFirstName());
-        lastNameInput.sendKeys(customer.getLastName());
-        companyNameInput.sendKeys(customer.getCompanyName());
-        Select countrySelect = new Select(billingCountrySelect);
-        countrySelect.selectByVisibleText(customer.getCountry());
-        billingAddress1Input.sendKeys(String.format("%s %s", customer.getStreet(), customer.getFlatNumber()));
-        billingAddress1Input.sendKeys(String.format("%s %s", customer.getStreet(), customer.getFlatNumber()));
-        billingPostcodeInput.sendKeys(customer.getZipCode());
-        billingCityInput.sendKeys(customer.getCity());
-        billingPhoneInput.sendKeys(customer.getPhone());
-        billingEmailInput.sendKeys(customer.getEmail());
-        orderCommentsInput.sendKeys(customer.getComments());
-        SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
-        spanForVisibleButtonPlaceOrder.click();
-        placeOrderButton.click();
+        try {
+            firstNameInput.sendKeys(customer.getFirstName());
+            lastNameInput.sendKeys(customer.getLastName());
+            companyNameInput.sendKeys(customer.getCompanyName());
+            Select countrySelect = new Select(billingCountrySelect);
+            countrySelect.selectByVisibleText(customer.getCountry());
+            billingAddress1Input.sendKeys(String.format("%s %s", customer.getStreet(), customer.getFlatNumber()));
+            billingAddress1Input.sendKeys(String.format("%s %s", customer.getStreet(), customer.getFlatNumber()));
+            billingPostcodeInput.sendKeys(customer.getZipCode());
+            billingCityInput.sendKeys(customer.getCity());
+            billingPhoneInput.sendKeys(customer.getPhone());
+            billingEmailInput.sendKeys(customer.getEmail());
+            orderCommentsInput.sendKeys(customer.getComments());
+            SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+            spanForVisibleButtonPlaceOrder.click();
+            placeOrderButton.click();
+            test.log(Status.PASS, "Add all data to the form order", SeleniumHelper.getScreenshot(driver));
+        } catch (IOException e) {
+            test.log(Status.FAIL, "Add all data to the form order", SeleniumHelper.getScreenshot(driver));
+        }
+
         return new OrderDetailsPage(driver);
     }
 
     public AddressDetailsPage validateAddressDetails(String fName, String lName, String country,
                                                      String addres, String zCode, String city,
-                                                     String phone, String email) {
+                                                     String phone, String email, ExtentTest test) throws IOException {
 
-        if (fName != "") {
-            firstNameInput.sendKeys(fName);
-            lastNameInput.sendKeys(lName);
-            Select countrySelect = new Select(billingCountrySelect);
-            countrySelect.selectByVisibleText(country);
-            billingAddress1Input.sendKeys(String.format(addres));
-            billingPostcodeInput.sendKeys(zCode);
-            billingCityInput.sendKeys(city);
-            billingPhoneInput.sendKeys(phone);
-            billingEmailInput.sendKeys(email);
-            spanForVisibleButtonPlaceOrder.click();
-            SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
-            SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
-            SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
-            spanForVisibleButtonPlaceOrder.click();
-            placeOrderButton.click();
-        } else {
-            spanForVisibleButtonPlaceOrder.click();
-            SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
-            SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
-            SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
-            placeOrderButton.click();
+        try {
+            if (fName != "") {
+                firstNameInput.sendKeys(fName);
+                lastNameInput.sendKeys(lName);
+                Select countrySelect = new Select(billingCountrySelect);
+                countrySelect.selectByVisibleText(country);
+                billingAddress1Input.sendKeys(String.format(addres));
+                billingPostcodeInput.sendKeys(zCode);
+                billingCityInput.sendKeys(city);
+                billingPhoneInput.sendKeys(phone);
+                billingEmailInput.sendKeys(email);
+                spanForVisibleButtonPlaceOrder.click();
+                SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
+                SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+                SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
+                spanForVisibleButtonPlaceOrder.click();
+                placeOrderButton.click();
+                test.log(Status.PASS, "Add data to the form order", SeleniumHelper.getScreenshot(driver));
+            } else {
+                SeleniumHelper.waitForElementToExist(driver, By.id("place_order"));
+                SeleniumHelper.waitForElementToBeVisible(driver, placeOrderButton);
+                SeleniumHelper.waitForClicableElement(driver, placeOrderButton);
+                spanForVisibleButtonPlaceOrder.click();
+                placeOrderButton.click();
+                test.log(Status.PASS, "Add data to the form order", SeleniumHelper.getScreenshot(driver));
+            }
+        } catch (IOException e) {
+            test.log(Status.FAIL, "Add data to the form order", SeleniumHelper.getScreenshot(driver));
         }
+
+
         return this;
     }
 

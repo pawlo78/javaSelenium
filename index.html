@@ -1,0 +1,2237 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ExtentReports</title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@6fbbd1c32fbc2463d026da5c6ce2e9eef0d29512/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa -report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="vheader">
+        <div class="nav-logo">
+          <a href="#">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">ExtentReports</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">paź 27, 2022 12:52:49 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="vcontainer">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
+						
+						
+						
+						
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Add coupon Test - Data: 12345</p>
+							<p class="duration text-sm">0h 0m 3s+412ms</p>
+							<span class="datetime">12:52:54 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Add coupon Test - Data: 12345</h5>
+									<span class='badge badge-success'>10.27.2022 12:52:54</span>
+									<span class='badge badge-danger'>10.27.2022 12:52:57</span>
+									<span class='badge badge-default'>0h 0m 3s+412ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:55</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot206.png' src='src/test/resources/screenshots/screenshot206.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:52:55</td>
+				<td>
+						Add product done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:52:56</td>
+				<td>
+						Shopping cart pressed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:56</td>
+				<td>
+						Add One Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot511.png' src='src/test/resources/screenshots/screenshot511.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:52:56</td>
+				<td>
+						Add code done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:52:56</td>
+				<td>
+						Coupon Apply Button done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:56</td>
+				<td>
+						Add coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot666.png' src='src/test/resources/screenshots/screenshot666.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:57</td>
+				<td>
+						Get Alert Coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot775.png' src='src/test/resources/screenshots/screenshot775.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:57</td>
+				<td>
+						Assert Add Coupon Test 12345
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot764.png' src='src/test/resources/screenshots/screenshot764.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:57</td>
+				<td>
+						Get Alert Coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot71.png' src='src/test/resources/screenshots/screenshot71.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Add coupon Test - Data:</p>
+							<p class="duration text-sm">0h 0m 2s+983ms</p>
+							<span class="datetime">12:52:59 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Add coupon Test - Data:</h5>
+									<span class='badge badge-success'>10.27.2022 12:52:59</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:02</span>
+									<span class='badge badge-default'>0h 0m 2s+983ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:52:59</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot252.png' src='src/test/resources/screenshots/screenshot252.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:52:59</td>
+				<td>
+						Add product done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:00</td>
+				<td>
+						Shopping cart pressed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:00</td>
+				<td>
+						Add One Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot293.png' src='src/test/resources/screenshots/screenshot293.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:00</td>
+				<td>
+						Add code done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:00</td>
+				<td>
+						Coupon Apply Button done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:01</td>
+				<td>
+						Add coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot744.png' src='src/test/resources/screenshots/screenshot744.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:01</td>
+				<td>
+						Get Alert Coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot478.png' src='src/test/resources/screenshots/screenshot478.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:01</td>
+				<td>
+						Assert Add Coupon Test
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot596.png' src='src/test/resources/screenshots/screenshot596.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:02</td>
+				<td>
+						Get Alert Coupon
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot360.png' src='src/test/resources/screenshots/screenshot360.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping One Product Over Product Page Test</p>
+							<p class="duration text-sm">0h 0m 6s+404ms</p>
+							<span class="datetime">12:53:03 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping One Product Over Product Page Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:03</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:09</span>
+									<span class='badge badge-default'>0h 0m 6s+404ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:03</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot974.png' src='src/test/resources/screenshots/screenshot974.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:04</td>
+				<td>
+						Open product page
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot400.png' src='src/test/resources/screenshots/screenshot400.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:05</td>
+				<td>
+						Add No Products To Main Product Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot505.png' src='src/test/resources/screenshots/screenshot505.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:06</td>
+				<td>
+						View Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot842.png' src='src/test/resources/screenshots/screenshot842.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:06</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:06</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:06</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:06</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot540.png' src='src/test/resources/screenshots/screenshot540.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:07</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot761.png' src='src/test/resources/screenshots/screenshot761.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:08</td>
+				<td>
+						Add all data to the form order
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot349.png' src='src/test/resources/screenshots/screenshot349.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot145.png' src='src/test/resources/screenshots/screenshot145.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Assert Shopping One Product Over Product Page Assert 1
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot441.png' src='src/test/resources/screenshots/screenshot441.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot284.png' src='src/test/resources/screenshots/screenshot284.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot778.png' src='src/test/resources/screenshots/screenshot778.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Assert Shopping One Product Over Product Page Assert 2
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot188.png' src='src/test/resources/screenshots/screenshot188.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:09</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot26.png' src='src/test/resources/screenshots/screenshot26.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping Three Product Over Product Page Test</p>
+							<p class="duration text-sm">0h 0m 8s+448ms</p>
+							<span class="datetime">12:53:11 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping Three Product Over Product Page Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:11</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:20</span>
+									<span class='badge badge-default'>0h 0m 8s+448ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:12</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot489.png' src='src/test/resources/screenshots/screenshot489.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:13</td>
+				<td>
+						Open product page
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot129.png' src='src/test/resources/screenshots/screenshot129.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:14</td>
+				<td>
+						Add No Products To Main Product Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot287.png' src='src/test/resources/screenshots/screenshot287.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:15</td>
+				<td>
+						Add no Products to cart - index: 2
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot782.png' src='src/test/resources/screenshots/screenshot782.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:15</td>
+				<td>
+						Add no Products to cart - index: 3
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot461.png' src='src/test/resources/screenshots/screenshot461.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:16</td>
+				<td>
+						View Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot520.png' src='src/test/resources/screenshots/screenshot520.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:16</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:16</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:16</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:16</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot882.png' src='src/test/resources/screenshots/screenshot882.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:17</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot838.png' src='src/test/resources/screenshots/screenshot838.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:18</td>
+				<td>
+						Add all data to the form order
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot197.png' src='src/test/resources/screenshots/screenshot197.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:19</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot470.png' src='src/test/resources/screenshots/screenshot470.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:19</td>
+				<td>
+						Assert Shopping Three Product Over Product Page Assert 1
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot227.png' src='src/test/resources/screenshots/screenshot227.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:19</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot696.png' src='src/test/resources/screenshots/screenshot696.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:19</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot446.png' src='src/test/resources/screenshots/screenshot446.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:20</td>
+				<td>
+						Assert Shopping Three Product Over Product Page Assert 2
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot518.png' src='src/test/resources/screenshots/screenshot518.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:20</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot378.png' src='src/test/resources/screenshots/screenshot378.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping Three Product Over Shop Page Test</p>
+							<p class="duration text-sm">0h 0m 6s+654ms</p>
+							<span class="datetime">12:53:21 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping Three Product Over Shop Page Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:21</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:28</span>
+									<span class='badge badge-default'>0h 0m 6s+654ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:21</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot70.png' src='src/test/resources/screenshots/screenshot70.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:23</td>
+				<td>
+						Add three prod done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Shopping cart click
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Add Three Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot599.png' src='src/test/resources/screenshots/screenshot599.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:24</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot708.png' src='src/test/resources/screenshots/screenshot708.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:25</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot104.png' src='src/test/resources/screenshots/screenshot104.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:26</td>
+				<td>
+						Add all data to the form order
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot382.png' src='src/test/resources/screenshots/screenshot382.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:27</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot299.png' src='src/test/resources/screenshots/screenshot299.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:27</td>
+				<td>
+						Assert 1 Shopping Three Product Over Shop Page
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot16.png' src='src/test/resources/screenshots/screenshot16.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:27</td>
+				<td>
+						Get Order Notice
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot605.png' src='src/test/resources/screenshots/screenshot605.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:27</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot454.png' src='src/test/resources/screenshots/screenshot454.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:28</td>
+				<td>
+						Assert 2 Shopping Three Product Over Shop Page
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot134.png' src='src/test/resources/screenshots/screenshot134.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:28</td>
+				<td>
+						Get Total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot738.png' src='src/test/resources/screenshots/screenshot738.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="6"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shop sort product Test - data: popularity</p>
+							<p class="duration text-sm">0h 0m 0s+838ms</p>
+							<span class="datetime">12:53:29 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shop sort product Test - data: popularity</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:29</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:30</span>
+									<span class='badge badge-default'>0h 0m 0s+838ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot266.png' src='src/test/resources/screenshots/screenshot266.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Select product by: popularity
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Click to sorted element
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Save data to storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Set Product List After Sort
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot112.png' src='src/test/resources/screenshots/screenshot112.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:30</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot5.png' src='src/test/resources/screenshots/screenshot5.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shop sort product Test - data: rating</p>
+							<p class="duration text-sm">0h 0m 1s+140ms</p>
+							<span class="datetime">12:53:31 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shop sort product Test - data: rating</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:31</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:32</span>
+									<span class='badge badge-default'>0h 0m 1s+140ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot638.png' src='src/test/resources/screenshots/screenshot638.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Select product by: rating
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Click to sorted element
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Save data to storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Set Product List After Sort
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot2.png' src='src/test/resources/screenshots/screenshot2.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:32</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot1.png' src='src/test/resources/screenshots/screenshot1.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shop sort product Test - data: date</p>
+							<p class="duration text-sm">0h 0m 1s+169ms</p>
+							<span class="datetime">12:53:34 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shop sort product Test - data: date</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:34</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:35</span>
+									<span class='badge badge-default'>0h 0m 1s+169ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:34</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot481.png' src='src/test/resources/screenshots/screenshot481.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:35</td>
+				<td>
+						Select product by: date
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:35</td>
+				<td>
+						Click to sorted element
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:35</td>
+				<td>
+						Save data to storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:35</td>
+				<td>
+						Set Product List After Sort
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot161.png' src='src/test/resources/screenshots/screenshot161.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:35</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot169.png' src='src/test/resources/screenshots/screenshot169.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shop sort product Test - data: price</p>
+							<p class="duration text-sm">0h 0m 1s+444ms</p>
+							<span class="datetime">12:53:37 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shop sort product Test - data: price</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:37</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:38</span>
+									<span class='badge badge-default'>0h 0m 1s+444ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:37</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot640.png' src='src/test/resources/screenshots/screenshot640.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:38</td>
+				<td>
+						Select product by: price
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:38</td>
+				<td>
+						Click to sorted element
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:38</td>
+				<td>
+						Save data to storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:38</td>
+				<td>
+						Set Product List After Sort
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot742.png' src='src/test/resources/screenshots/screenshot742.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:38</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot346.png' src='src/test/resources/screenshots/screenshot346.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="10"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shop sort product Test - data: price-desc</p>
+							<p class="duration text-sm">0h 0m 1s+235ms</p>
+							<span class="datetime">12:53:39 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shop sort product Test - data: price-desc</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:39</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:41</span>
+									<span class='badge badge-default'>0h 0m 1s+235ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:40</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot393.png' src='src/test/resources/screenshots/screenshot393.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:40</td>
+				<td>
+						Select product by: price-desc
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:40</td>
+				<td>
+						Click to sorted element
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:40</td>
+				<td>
+						Save data to storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:40</td>
+				<td>
+						Set Product List After Sort
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot897.png' src='src/test/resources/screenshots/screenshot897.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:41</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot499.png' src='src/test/resources/screenshots/screenshot499.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="11"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping Three Prod Over Shop Page Test - Data:</p>
+							<p class="duration text-sm">0h 0m 4s+11ms</p>
+							<span class="datetime">12:53:42 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping Three Prod Over Shop Page Test - Data:</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:42</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:46</span>
+									<span class='badge badge-default'>0h 0m 4s+11ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:42</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot166.png' src='src/test/resources/screenshots/screenshot166.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:42</td>
+				<td>
+						Add product done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Shopping cart pressed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Add One Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot143.png' src='src/test/resources/screenshots/screenshot143.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:44</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot344.png' src='src/test/resources/screenshots/screenshot344.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:45</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot648.png' src='src/test/resources/screenshots/screenshot648.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:45</td>
+				<td>
+						Add data to the form order
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot894.png' src='src/test/resources/screenshots/screenshot894.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:46</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot335.png' src='src/test/resources/screenshots/screenshot335.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping Three Prod Over Shop Page Test - Data: 1</p>
+							<p class="duration text-sm">0h 0m 2s+632ms</p>
+							<span class="datetime">12:53:47 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping Three Prod Over Shop Page Test - Data: 1</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:47</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:50</span>
+									<span class='badge badge-default'>0h 0m 2s+632ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:48</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot682.png' src='src/test/resources/screenshots/screenshot682.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:48</td>
+				<td>
+						Add product done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Shopping cart pressed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Add One Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot254.png' src='src/test/resources/screenshots/screenshot254.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:49</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot747.png' src='src/test/resources/screenshots/screenshot747.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:50</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot780.png' src='src/test/resources/screenshots/screenshot780.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Shopping Three Prod Over Shop Page Test - Data: 2</p>
+							<p class="duration text-sm">0h 0m 3s+935ms</p>
+							<span class="datetime">12:53:52 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Shopping Three Prod Over Shop Page Test - Data: 2</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:52</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:56</span>
+									<span class='badge badge-default'>0h 0m 3s+935ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:53</td>
+				<td>
+						Shop Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot262.png' src='src/test/resources/screenshots/screenshot262.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:53</td>
+				<td>
+						Add product done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:53</td>
+				<td>
+						Shopping cart pressed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:54</td>
+				<td>
+						Add One Products To Cart
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot866.png' src='src/test/resources/screenshots/screenshot866.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:54</td>
+				<td>
+						Get Price done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:54</td>
+				<td>
+						Get noProduct done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:54</td>
+				<td>
+						Total price save in storage
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:54</td>
+				<td>
+						Set total Price
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot517.png' src='src/test/resources/screenshots/screenshot517.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:55</td>
+				<td>
+						Open Billing Details
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot806.png' src='src/test/resources/screenshots/screenshot806.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:55</td>
+				<td>
+						Add data to the form order
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot1.png' src='src/test/resources/screenshots/screenshot1.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:56</td>
+				<td>
+						Assertions passed
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot110.png' src='src/test/resources/screenshots/screenshot110.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Register user Test</p>
+							<p class="duration text-sm">0h 0m 1s+512ms</p>
+							<span class="datetime">12:53:57 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Register user Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:53:57</span>
+									<span class='badge badge-danger'>10.27.2022 12:53:59</span>
+									<span class='badge badge-default'>0h 0m 1s+512ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:58</td>
+				<td>
+						Account Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot970.png' src='src/test/resources/screenshots/screenshot970.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:58</td>
+				<td>
+						Username done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:58</td>
+				<td>
+						Password done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:53:58</td>
+				<td>
+						Button Register done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:59</td>
+				<td>
+						Register user
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot439.png' src='src/test/resources/screenshots/screenshot439.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:59</td>
+				<td>
+						Setting data to register with ValidData
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot955.png' src='src/test/resources/screenshots/screenshot955.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:59</td>
+				<td>
+						Get dashboard link
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot809.png' src='src/test/resources/screenshots/screenshot809.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:53:59</td>
+				<td>
+						Assert Register User Test
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot387.png' src='src/test/resources/screenshots/screenshot387.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Register user with exist login</p>
+							<p class="duration text-sm">0h 0m 1s+257ms</p>
+							<span class="datetime">12:54:00 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Register user with exist login</h5>
+									<span class='badge badge-success'>10.27.2022 12:54:00</span>
+									<span class='badge badge-danger'>10.27.2022 12:54:02</span>
+									<span class='badge badge-default'>0h 0m 1s+257ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Account Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot458.png' src='src/test/resources/screenshots/screenshot458.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Username done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Password done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Button Register done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Register user
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot40.png' src='src/test/resources/screenshots/screenshot40.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Setting data to register with InvalidData
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot276.png' src='src/test/resources/screenshots/screenshot276.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:01</td>
+				<td>
+						Get errors done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:02</td>
+				<td>
+						Assert Register User With Same Data Test
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot809.png' src='src/test/resources/screenshots/screenshot809.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="16"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login Test</p>
+							<p class="duration text-sm">0h 0m 1s+491ms</p>
+							<span class="datetime">12:54:03 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:54:03</span>
+									<span class='badge badge-danger'>10.27.2022 12:54:04</span>
+									<span class='badge badge-default'>0h 0m 1s+491ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:03</td>
+				<td>
+						Account Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot238.png' src='src/test/resources/screenshots/screenshot238.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:03</td>
+				<td>
+						Username done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:03</td>
+				<td>
+						Password done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:04</td>
+				<td>
+						Button Login done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:04</td>
+				<td>
+						Log In
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot980.png' src='src/test/resources/screenshots/screenshot980.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:04</td>
+				<td>
+						Setting data to login with ValidData
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot29.png' src='src/test/resources/screenshots/screenshot29.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:04</td>
+				<td>
+						Get dashboard link
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot285.png' src='src/test/resources/screenshots/screenshot285.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:04</td>
+				<td>
+						Assert Login test
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot359.png' src='src/test/resources/screenshots/screenshot359.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="17"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login with Invalid Data Test</p>
+							<p class="duration text-sm">0h 0m 1s+630ms</p>
+							<span class="datetime">12:54:06 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login with Invalid Data Test</h5>
+									<span class='badge badge-success'>10.27.2022 12:54:06</span>
+									<span class='badge badge-danger'>10.27.2022 12:54:07</span>
+									<span class='badge badge-default'>0h 0m 1s+630ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:06</td>
+				<td>
+						Account Page Open
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot627.png' src='src/test/resources/screenshots/screenshot627.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:06</td>
+				<td>
+						Username done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:06</td>
+				<td>
+						Password done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:54:07</td>
+				<td>
+						Button Login done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:07</td>
+				<td>
+						Log In
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot530.png' src='src/test/resources/screenshots/screenshot530.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:07</td>
+				<td>
+						Setting data to login with InvalidData
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot903.png' src='src/test/resources/screenshots/screenshot903.png'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:07</td>
+				<td>
+						Get errors done
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:54:07</td>
+				<td>
+						Assert Login With Invalid Data Test
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='src/test/resources/screenshots/screenshot530.png' src='src/test/resources/screenshots/screenshot530.png'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='100%'>
+						<b>17</b> tests passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Log events</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='events-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='62,577%'><b>102</b> events passed</small></div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> events failed, 
+						<b data-tooltip='37,423%'>61</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">17</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>100,00%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">paź 27, 2022 12:52:49 PM</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 1m 18s+397ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 17,
+		passParent: 17,
+		failParent: 0,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 0,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+		eventsCount: 163,
+		passEvents: 102,
+		failEvents: 0,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 0,
+		infoEvents: 61,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "Add coupon Test - Data: 12345":3.412,"Add coupon Test - Data:":2.983,"Shopping One Product Over Product Page Test":6.404,"Shopping Three Product Over Product Page Test":8.448,"Shopping Three Product Over Shop Page Test":6.654,"Shop sort product Test - data: popularity":0.838,"Shop sort product Test - data: rating":1.14,"Shop sort product Test - data: date":1.169,"Shop sort product Test - data: price":1.444,"Shop sort product Test - data: price-desc":1.235,"Shopping Three Prod Over Shop Page Test - Data:":4.011,"Shopping Three Prod Over Shop Page Test - Data: 1":2.632,"Shopping Three Prod Over Shop Page Test - Data: 2":3.935,"Register user Test":1.512,"Register user with exist login":1.257,"Login Test":1.491,"Login with Invalid Data Test":1.63
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ac7abbc71b4bb073da00153a5a3fdbcfe0c95e2a/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+</script></body>
+</html>
